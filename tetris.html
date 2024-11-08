@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>간단한 테트리스</title>
+    <style>
+        canvas {
+            background-color: #ddd;
+            border: 2px solid #333;
+            display: block;
+            margin: 20px auto;
+        }
+        #score {
+            text-align: center;
+            font-size: 1.5em;
+        }
+        #controls {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="score">Score: 0</div>
+    <canvas id="tetris" width="200" height="400"></canvas>
+    <div id="controls">
+        <button onclick="startGame()">게임 시작</button>
+    </div>
+
+    <!-- tetris.js 파일을 불러오는 부분 -->
+    <script src="tetris.js"></script>
+</body>
+</html>
